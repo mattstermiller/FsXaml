@@ -4,7 +4,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:fsxaml="http://github.com/fsprojects/FsXaml"
         xmlns:local="clr-namespace:WpfSimpleDrawingApplication;assembly=WpfSimpleDrawingApplication"
-        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+        xmlns:i="clr-namespace:Microsoft.Xaml.Behaviors;assembly=Microsoft.Xaml.Behaviors" 
         Title="Drawing using EventToFSharpEvent"
         >
     <Window.DataContext>

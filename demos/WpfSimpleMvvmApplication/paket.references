@@ -1,3 +1,5 @@
-System.Windows.Interactivity.WPF
-FSharp.ViewModule.Core
 FSharp.Core
+Microsoft.Xaml.Behaviors.Wpf
+
+group Demo
+    FSharp.ViewModule.Core

@@ -1,1 +1,4 @@
-FSharp.Desktop.UI
+FSharp.Core
+
+group Demo
+    FSharp.Desktop.UI

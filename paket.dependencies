@@ -24,6 +24,7 @@ group Test
   source https://nuget.org/api/v2
   frameworks: >= net45
   
+  nuget Castle.Core 3.3 redirects: force
   nuget NUnit ~> 2
   nuget NUnit.Runners ~> 2
   nuget TestStack.White

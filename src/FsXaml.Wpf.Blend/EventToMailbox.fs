@@ -3,7 +3,7 @@
 open System
 open System.Windows
 open System.Windows.Input
-open System.Windows.Interactivity
+open Microsoft.Xaml.Behaviors
 
 type EventToMailbox() as self =
     inherit TriggerAction<DependencyObject>()

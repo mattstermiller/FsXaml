@@ -1,4 +1,4 @@
-﻿namespace FsXaml
+namespace FsXaml
 
 open System
 open System.Reflection
@@ -98,7 +98,7 @@ module internal XamlTypeUtils =
                 invokeCode =
                     (fun args ->       
                         match args with
-                        | [this] -> Expr.Call(this, initializeComponentMethod, [ ])                                 
+                        | [this] -> Expr.Call(this, initializeComponentMethod, [ ])
                         | _ -> failwith "Wrong constructor arguments"))
         providedConstructor.BaseConstructorCall <- fun args -> baseConstructorInfo, args                         
         providedType.AddMember providedConstructor

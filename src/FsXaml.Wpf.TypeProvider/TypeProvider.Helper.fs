@@ -4,7 +4,7 @@ open System
 open System.IO
 open ProviderImplementation.ProvidedTypes
 
-let findConfigFile resolutionFolder configFileName =
+let findConfigFile resolutionFolder (configFileName: string) =
     if Path.IsPathRooted configFileName then 
         configFileName 
     else 

@@ -1,25 +1,24 @@
 source https://www.nuget.org/api/v2/
-frameworks: >= net45
+frameworks: >= net45, netcoreapp3.0
 
-nuget FSharp.Core redirects: force
-nuget System.Windows.Interactivity.WPF 2.0.20525
-nuget FSharp.Desktop.UI 0.7.1
-nuget FSharp.ViewModule.Core 1.0.0.0
-nuget Gjallarhorn.Bindable.Wpf
+nuget FSharp.Core 4.3.4 redirects: force
+nuget Microsoft.Xaml.Behaviors.Wpf
 
 group Build
   source https://nuget.org/api/v2
-  frameworks: >= net45
+  frameworks: net45, netcoreapp3.0
   
   nuget SourceLink.Fake
   nuget FAKE
   nuget FSharp.Formatting
   nuget NuGet.CommandLine
 
+  nuget NETStandard.Library.NETFramework
+
   github fsharp/FAKE modules/Octokit/Octokit.fsx
-  github fsprojects/FSharp.TypeProviders.StarterPack src/ProvidedTypes.fsi
-  github fsprojects/FSharp.TypeProviders.StarterPack src/ProvidedTypes.fs
-  github fsprojects/FSharp.TypeProviders.StarterPack src/ProvidedTypesTesting.fs
+  github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fsi
+  github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fs
+  github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypesTesting.fs
 
 group Test
   source https://nuget.org/api/v2
@@ -28,3 +27,12 @@ group Test
   nuget NUnit ~> 2
   nuget NUnit.Runners ~> 2
   nuget TestStack.White
+
+group Demo
+  source https://nuget.org/api/v2
+  frameworks: >= net45
+
+  nuget FSharp.Desktop.UI 0.7.1
+  nuget FSharp.ViewModule.Core 1.0.0.0
+  nuget Gjallarhorn.Bindable.Wpf
+  nuget Rx-PlatformServices 2.2.5

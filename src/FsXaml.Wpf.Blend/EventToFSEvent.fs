@@ -2,7 +2,7 @@
 
 open System
 open System.Windows
-open System.Windows.Interactivity
+open Microsoft.Xaml.Behaviors
 
 type EventToFSharpEvent() as self =
     inherit TriggerAction<DependencyObject>()

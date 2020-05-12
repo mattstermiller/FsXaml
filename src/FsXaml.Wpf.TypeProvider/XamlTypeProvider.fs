@@ -1,4 +1,4 @@
-﻿namespace FsXaml
+namespace FsXaml
 
 open System
 open System.IO

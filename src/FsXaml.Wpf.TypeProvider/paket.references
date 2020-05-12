@@ -1,0 +1,5 @@
+FSharp.Core
+
+group Build
+    File:ProvidedTypes.fsi
+    File:ProvidedTypes.fs
